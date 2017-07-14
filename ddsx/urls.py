@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include('sx.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^index',include('sx.urls'))
 
 
 ]

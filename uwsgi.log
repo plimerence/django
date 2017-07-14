@@ -1,4 +1,4 @@
-*** Starting uWSGI 2.0.15 (64bit) on [Thu Jul 13 16:45:26 2017] ***
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Jul 13 19:01:35 2017] ***
 compiled with version: 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41) on 24 April 2017 14:51:38
 os: Darwin-16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64
 nodename: zhangdeMacBook-Pro.local
@@ -17,92 +17,325 @@ lock engine: OSX spinlocks
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:5617 fd 3
 Python version: 3.6.1 (default, Apr 11 2017, 18:57:57)  [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41)]
-Python main interpreter initialized at 0x7f8c20802800
+Python main interpreter initialized at 0x7fad00005200
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 932544 bytes (910 KB) for 32 cores
 *** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f8c20802800 pid: 15040 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fad00005200 pid: 17536 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 15040)
-spawned uWSGI worker 1 (pid: 15046, cores: 4)
-spawned uWSGI worker 2 (pid: 15047, cores: 4)
-spawned uWSGI worker 3 (pid: 15048, cores: 4)
-spawned uWSGI worker 4 (pid: 15049, cores: 4)
-spawned uWSGI worker 5 (pid: 15050, cores: 4)
-spawned uWSGI worker 6 (pid: 15051, cores: 4)
-spawned uWSGI worker 7 (pid: 15052, cores: 4)
-spawned uWSGI worker 8 (pid: 15053, cores: 4)
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-[pid: 15053|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 840 bytes} [Thu Jul 13 08:45:51 2017] GET /admin/ => generated 3836 bytes in 73 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 2)
-[pid: 15053|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 08:45:52 2017] GET /static/admin/css/base.css => generated 99 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 3)
-[pid: 15052|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 08:45:52 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 101 bytes (2 switches on core 3)
-[pid: 15050|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 879 bytes} [Thu Jul 13 08:45:54 2017] GET /admin/ => generated 3836 bytes in 78 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
-[pid: 15053|app: 0|req: 3/5] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 08:45:54 2017] GET /static/admin/css/base.css => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 1)
-[pid: 15053|app: 0|req: 4/6] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 08:45:54 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (2 switches on core 2)
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-invalid request block size: 21573 (max 4096)...skip
-[pid: 15053|app: 0|req: 5/7] 127.0.0.1 () {42 vars in 840 bytes} [Thu Jul 13 08:48:08 2017] GET /admin/ => generated 3836 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 1)
-[pid: 15053|app: 0|req: 6/8] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 08:48:08 2017] GET /static/admin/css/base.css => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 2)
-[pid: 15053|app: 0|req: 7/9] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 08:48:08 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (2 switches on core 3)
+spawned uWSGI master process (pid: 17536)
+spawned uWSGI worker 1 (pid: 17546, cores: 4)
+spawned uWSGI worker 2 (pid: 17547, cores: 4)
+spawned uWSGI worker 3 (pid: 17548, cores: 4)
+spawned uWSGI worker 4 (pid: 17549, cores: 4)
+spawned uWSGI worker 5 (pid: 17550, cores: 4)
+spawned uWSGI worker 6 (pid: 17551, cores: 4)
+spawned uWSGI worker 7 (pid: 17552, cores: 4)
+spawned uWSGI worker 8 (pid: 17553, cores: 4)
+[pid: 17553|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 871 bytes} [Thu Jul 13 11:01:50 2017] GET /admin/ => generated 3836 bytes in 110 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 3/2] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 11:01:50 2017] GET /static/admin/css/base.css => generated 2211 bytes in 56 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 11:01:50 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 17553|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 871 bytes} [Thu Jul 13 11:09:13 2017] GET /admin/ => generated 3836 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 2)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 6/5] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 11:09:13 2017] GET /static/admin/css/base.css => generated 2211 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 11:09:13 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+[pid: 17553|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 840 bytes} [Thu Jul 13 11:10:11 2017] GET /admin/ => generated 3836 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 1)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 826 bytes} [Thu Jul 13 11:10:11 2017] GET /static/admin/css/base.css => generated 2211 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 9/9] 127.0.0.1 () {42 vars in 836 bytes} [Thu Jul 13 11:10:11 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 17553|app: 0|req: 10/10] 127.0.0.1 () {42 vars in 856 bytes} [Thu Jul 13 11:10:15 2017] GET /user/register/ => generated 2588 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 17553|app: 0|req: 12/11] 127.0.0.1 () {42 vars in 829 bytes} [Thu Jul 13 11:10:15 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 57 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/css/reset.css
+Not Found: /static/js/register.js
+Not Found: /static/css/main.css
+[pid: 17553|app: 0|req: 14/12] 127.0.0.1 () {42 vars in 824 bytes} [Thu Jul 13 11:10:15 2017] GET /static/css/reset.css => generated 2196 bytes in 74 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+[pid: 17553|app: 0|req: 14/14] 127.0.0.1 () {42 vars in 822 bytes} [Thu Jul 13 11:10:15 2017] GET /static/css/main.css => generated 2193 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 17553|app: 0|req: 14/14] 127.0.0.1 () {42 vars in 811 bytes} [Thu Jul 13 11:10:15 2017] GET /static/js/register.js => generated 2199 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/js/register.js
+[pid: 17553|app: 0|req: 15/15] 127.0.0.1 () {42 vars in 811 bytes} [Thu Jul 13 11:10:15 2017] GET /static/js/register.js => generated 2199 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/images/logo02.png
+[pid: 17553|app: 0|req: 16/16] 127.0.0.1 () {42 vars in 842 bytes} [Thu Jul 13 11:10:15 2017] GET /static/images/logo02.png => generated 2208 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+[pid: 17553|app: 0|req: 17/17] 127.0.0.1 () {44 vars in 887 bytes} [Thu Jul 13 11:14:59 2017] GET /user/register/ => generated 2588 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+Not Found: /static/css/reset.css
+[pid: 17553|app: 0|req: 21/18] 127.0.0.1 () {42 vars in 824 bytes} [Thu Jul 13 11:14:59 2017] GET /static/css/reset.css => generated 2196 bytes in 42 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 17553|app: 0|req: 21/19] 127.0.0.1 () {42 vars in 829 bytes} [Thu Jul 13 11:14:59 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/css/main.css
+Not Found: /static/js/register.js
+[pid: 17553|app: 0|req: 21/21] 127.0.0.1 () {42 vars in 822 bytes} [Thu Jul 13 11:14:59 2017] GET /static/css/main.css => generated 2193 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 17553|app: 0|req: 21/21] 127.0.0.1 () {42 vars in 811 bytes} [Thu Jul 13 11:14:59 2017] GET /static/js/register.js => generated 2199 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/images/logo02.png
+[pid: 17552|app: 0|req: 1/22] 127.0.0.1 () {42 vars in 842 bytes} [Thu Jul 13 11:14:59 2017] GET /static/images/logo02.png => generated 2208 bytes in 43 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+[pid: 17553|app: 0|req: 22/23] 127.0.0.1 () {44 vars in 887 bytes} [Thu Jul 13 11:30:47 2017] GET /user/register/ => generated 2588 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 3)
+Not Found: /static/css/reset.css
+[pid: 17553|app: 0|req: 23/24] 127.0.0.1 () {42 vars in 824 bytes} [Thu Jul 13 11:30:47 2017] GET /static/css/reset.css => generated 2196 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/css/main.css
+[pid: 17553|app: 0|req: 24/25] 127.0.0.1 () {42 vars in 822 bytes} [Thu Jul 13 11:30:47 2017] GET /static/css/main.css => generated 2193 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 17553|app: 0|req: 25/26] 127.0.0.1 () {42 vars in 829 bytes} [Thu Jul 13 11:30:47 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/register.js
+[pid: 17553|app: 0|req: 26/27] 127.0.0.1 () {42 vars in 811 bytes} [Thu Jul 13 11:30:47 2017] GET /static/js/register.js => generated 2199 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/images/logo02.png
+[pid: 17552|app: 0|req: 2/28] 127.0.0.1 () {42 vars in 842 bytes} [Thu Jul 13 11:30:47 2017] GET /static/images/logo02.png => generated 2208 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 17553|app: 0|req: 27/29] 127.0.0.1 () {44 vars in 887 bytes} [Fri Jul 14 02:39:43 2017] GET /user/register/ => generated 2588 bytes in 53 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 2)
+Not Found: /static/css/reset.css
+[pid: 17553|app: 0|req: 31/30] 127.0.0.1 () {42 vars in 824 bytes} [Fri Jul 14 02:39:43 2017] GET /static/css/reset.css => generated 2196 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 17553|app: 0|req: 31/31] 127.0.0.1 () {42 vars in 829 bytes} [Fri Jul 14 02:39:43 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/css/main.css
+[pid: 17553|app: 0|req: 31/32] 127.0.0.1 () {42 vars in 822 bytes} [Fri Jul 14 02:39:43 2017] GET /static/css/main.css => generated 2193 bytes in 25 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/register.js
+[pid: 17553|app: 0|req: 31/33] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 02:39:43 2017] GET /static/js/register.js => generated 2199 bytes in 34 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/images/logo02.png
+[pid: 17553|app: 0|req: 32/34] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 02:39:43 2017] GET /static/images/logo02.png => generated 2208 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/js/register.js
+[pid: 17553|app: 0|req: 33/35] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 02:39:43 2017] GET /static/js/register.js => generated 2199 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/images/logo02.png
+[pid: 17553|app: 0|req: 34/36] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 02:39:44 2017] GET /static/images/logo02.png => generated 2208 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/50x.html
+[pid: 17553|app: 0|req: 35/37] 127.0.0.1 () {42 vars in 858 bytes} [Fri Jul 14 03:44:43 2017] GET /static/50x.html => generated 2181 bytes in 42 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+Not Found: /index.html
+[pid: 17552|app: 0|req: 3/38] 127.0.0.1 () {42 vars in 848 bytes} [Fri Jul 14 03:45:46 2017] GET /index.html => generated 2166 bytes in 52 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+[pid: 17552|app: 0|req: 4/39] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 03:46:11 2017] GET /admin/ => generated 3836 bytes in 247 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 36/40] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 03:46:11 2017] GET /static/admin/css/base.css => generated 2211 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 37/41] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 03:46:11 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 17553|app: 0|req: 38/42] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 03:46:11 2017] GET /admin/ => generated 3836 bytes in 59 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 2)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 39/43] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 03:46:11 2017] GET /static/admin/css/base.css => generated 2211 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 40/44] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 03:46:11 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+[pid: 17553|app: 0|req: 41/45] 127.0.0.1 () {44 vars in 911 bytes} [Fri Jul 14 03:47:12 2017] GET /admin/password_change/ => generated 2588 bytes in 49 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 42/46] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 03:47:12 2017] GET /static/admin/css/base.css => generated 2211 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/admin/css/forms.css
+[pid: 17553|app: 0|req: 43/47] 127.0.0.1 () {42 vars in 844 bytes} [Fri Jul 14 03:47:12 2017] GET /static/admin/css/forms.css => generated 2214 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 17551|app: 0|req: 1/48] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 06:10:49 2017] GET /admin/ => generated 3836 bytes in 208 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 2)
+Not Found: /static/admin/css/base.css
+[pid: 17552|app: 0|req: 5/49] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:10:50 2017] GET /static/admin/css/base.css => generated 2211 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 44/50] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:10:50 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/dashboard.css
+[pid: 17553|app: 0|req: 46/52] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:10:59 2017] GET /static/admin/css/base.css => generated 2211 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+[pid: 17553|app: 0|req: 46/52] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:10:59 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 17553|app: 0|req: 47/53] 127.0.0.1 () {44 vars in 871 bytes} [Fri Jul 14 06:11:05 2017] GET /admin/ => generated 3836 bytes in 51 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 3)
+Not Found: /static/admin/css/base.css
+[pid: 17553|app: 0|req: 48/54] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:11:05 2017] GET /static/admin/css/base.css => generated 2211 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/admin/css/dashboard.css
+[pid: 17552|app: 0|req: 6/55] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:11:05 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jul 14 14:12:04 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41) on 24 April 2017 14:51:38
+os: Darwin-16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64
+nodename: zhangdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/zhanghua/Desktop/ddsx/ddsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /Users/zhanghua/Desktop/ddsx/ddsx
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5617 fd 3
+Python version: 3.6.1 (default, Apr 11 2017, 18:57:57)  [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41)]
+Python main interpreter initialized at 0x7fd600800000
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 932544 bytes (910 KB) for 32 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fd600800000 pid: 23551 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23551)
+spawned uWSGI worker 1 (pid: 23561, cores: 4)
+spawned uWSGI worker 2 (pid: 23562, cores: 4)
+spawned uWSGI worker 3 (pid: 23563, cores: 4)
+spawned uWSGI worker 4 (pid: 23564, cores: 4)
+spawned uWSGI worker 5 (pid: 23565, cores: 4)
+spawned uWSGI worker 6 (pid: 23566, cores: 4)
+spawned uWSGI worker 7 (pid: 23567, cores: 4)
+spawned uWSGI worker 8 (pid: 23568, cores: 4)
+[pid: 23563|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 06:12:14 2017] GET /admin/ => generated 3836 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 23567|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:12:14 2017] GET /static/admin/css/base.css => generated 2211 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/admin/css/dashboard.css
+[pid: 23568|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:12:14 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 28 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+[pid: 23568|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 06:14:17 2017] GET /admin/ => generated 3836 bytes in 87 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 3)
+Not Found: /static/admin/css/base.css
+[pid: 23567|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:14:18 2017] GET /static/admin/css/base.css => generated 2211 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 23568|app: 0|req: 3/6] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:14:18 2017] GET /static/admin/css/dashboard.css => generated 2226 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23568|app: 0|req: 4/7] 127.0.0.1 () {42 vars in 856 bytes} [Fri Jul 14 06:14:22 2017] GET /user/register/ => generated 2588 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 1)
+Not Found: /static/css/reset.css
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/css/main.css
+[pid: 23568|app: 0|req: 8/9] 127.0.0.1 () {42 vars in 824 bytes} [Fri Jul 14 06:14:22 2017] GET /static/css/reset.css => generated 2196 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+[pid: 23568|app: 0|req: 8/9] 127.0.0.1 () {42 vars in 829 bytes} [Fri Jul 14 06:14:22 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/register.js
+[pid: 23568|app: 0|req: 8/10] 127.0.0.1 () {42 vars in 822 bytes} [Fri Jul 14 06:14:22 2017] GET /static/css/main.css => generated 2193 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+[pid: 23568|app: 0|req: 8/11] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 06:14:22 2017] GET /static/js/register.js => generated 2199 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/images/logo02.png
+[pid: 23568|app: 0|req: 9/12] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 06:14:22 2017] GET /static/images/logo02.png => generated 2208 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/js/register.js
+[pid: 23568|app: 0|req: 10/13] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 06:14:22 2017] GET /static/js/register.js => generated 2199 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/images/logo02.png
+[pid: 23568|app: 0|req: 11/14] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 06:14:22 2017] GET /static/images/logo02.png => generated 2208 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/css/reset.css
+Not Found: /static/css/main.css
+[pid: 23568|app: 0|req: 13/16] 127.0.0.1 () {42 vars in 824 bytes} [Fri Jul 14 06:14:27 2017] GET /static/css/reset.css => generated 2196 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 23568|app: 0|req: 13/16] 127.0.0.1 () {42 vars in 822 bytes} [Fri Jul 14 06:14:27 2017] GET /static/css/main.css => generated 2193 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+[pid: 23568|app: 0|req: 14/17] 127.0.0.1 () {44 vars in 887 bytes} [Fri Jul 14 06:14:32 2017] GET /user/register/ => generated 2588 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (2 switches on core 0)
+Not Found: /static/css/reset.css
+[pid: 23568|app: 0|req: 15/18] 127.0.0.1 () {42 vars in 824 bytes} [Fri Jul 14 06:14:32 2017] GET /static/css/reset.css => generated 2196 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/js/register.js
+[pid: 23567|app: 0|req: 3/19] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 06:14:32 2017] GET /static/js/register.js => generated 2199 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 2)
+Not Found: /static/css/main.css
+[pid: 23568|app: 0|req: 17/20] 127.0.0.1 () {42 vars in 822 bytes} [Fri Jul 14 06:14:32 2017] GET /static/css/main.css => generated 2193 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /static/js/jquery-1.12.4.min.js
+[pid: 23568|app: 0|req: 17/21] 127.0.0.1 () {42 vars in 829 bytes} [Fri Jul 14 06:14:32 2017] GET /static/js/jquery-1.12.4.min.js => generated 2226 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 3)
+Not Found: /static/js/register.js
+[pid: 23568|app: 0|req: 18/22] 127.0.0.1 () {42 vars in 811 bytes} [Fri Jul 14 06:14:32 2017] GET /static/js/register.js => generated 2199 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/images/logo02.png
+[pid: 23567|app: 0|req: 4/23] 127.0.0.1 () {42 vars in 842 bytes} [Fri Jul 14 06:14:32 2017] GET /static/images/logo02.png => generated 2208 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/index.html
+[pid: 23567|app: 0|req: 5/24] 127.0.0.1 () {42 vars in 862 bytes} [Fri Jul 14 06:40:54 2017] GET /static/index.html => generated 2187 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jul 14 14:44:08 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41) on 24 April 2017 14:51:38
+os: Darwin-16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64
+nodename: zhangdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/zhanghua/Desktop/ddsx/ddsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /Users/zhanghua/Desktop/ddsx/ddsx
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5617 fd 3
+Python version: 3.6.1 (default, Apr 11 2017, 18:57:57)  [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41)]
+Python main interpreter initialized at 0x7f9cba82bc00
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 932544 bytes (910 KB) for 32 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f9cba82bc00 pid: 23839 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23839)
+spawned uWSGI worker 1 (pid: 23849, cores: 4)
+spawned uWSGI worker 2 (pid: 23850, cores: 4)
+spawned uWSGI worker 3 (pid: 23851, cores: 4)
+spawned uWSGI worker 4 (pid: 23852, cores: 4)
+spawned uWSGI worker 5 (pid: 23853, cores: 4)
+spawned uWSGI worker 6 (pid: 23854, cores: 4)
+spawned uWSGI worker 7 (pid: 23855, cores: 4)
+spawned uWSGI worker 8 (pid: 23856, cores: 4)
+[pid: 23855|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 840 bytes} [Fri Jul 14 06:47:59 2017] GET /admin/ => generated 3836 bytes in 82 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+[pid: 23855|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:47:59 2017] GET /static/admin/css/base.css => generated 99 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 23855|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:47:59 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 2)
+[pid: 23855|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:48:06 2017] GET /static/admin/css/base.css => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 3)
+[pid: 23856|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:48:06 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 34 msecs (HTTP/1.1 404) 3 headers in 101 bytes (2 switches on core 1)
+[pid: 23856|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 871 bytes} [Fri Jul 14 06:48:10 2017] GET /admin/ => generated 3836 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)
+[pid: 23855|app: 0|req: 5/7] 127.0.0.1 () {42 vars in 826 bytes} [Fri Jul 14 06:48:10 2017] GET /static/admin/css/base.css => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 23853|app: 0|req: 1/8] 127.0.0.1 () {42 vars in 836 bytes} [Fri Jul 14 06:48:10 2017] GET /static/admin/css/dashboard.css => generated 104 bytes in 101 msecs (HTTP/1.1 404) 3 headers in 101 bytes (2 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Fri Jul 14 17:12:30 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41) on 24 April 2017 14:51:38
+os: Darwin-16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64
+nodename: zhangdeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/zhanghua/Desktop/ddsx/ddsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /Users/zhanghua/Desktop/ddsx/ddsx
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:5617 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:54911 (port auto-assigned) fd 3
+Python version: 3.6.1 (default, Apr 11 2017, 18:57:57)  [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.41)]
+Python main interpreter initialized at 0x7fa78302dc00
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 932544 bytes (910 KB) for 32 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fa78302dc00 pid: 26352 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26352)
+spawned uWSGI worker 1 (pid: 26362, cores: 4)
+spawned uWSGI worker 2 (pid: 26363, cores: 4)
+spawned uWSGI worker 3 (pid: 26364, cores: 4)
+spawned uWSGI worker 4 (pid: 26365, cores: 4)
+spawned uWSGI worker 5 (pid: 26366, cores: 4)
+spawned uWSGI worker 6 (pid: 26367, cores: 4)
+spawned uWSGI worker 7 (pid: 26368, cores: 4)
+spawned uWSGI worker 8 (pid: 26369, cores: 4)
+spawned uWSGI http 1 (pid: 26370)
+[pid: 26369|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 777 bytes} [Fri Jul 14 09:13:16 2017] GET / => generated 74 bytes in 49 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 26369|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 808 bytes} [Fri Jul 14 09:13:21 2017] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 26369|app: 0|req: 3/3] 127.0.0.1 () {36 vars in 644 bytes} [Fri Jul 14 09:13:35 2017] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 26369|app: 0|req: 4/4] 127.0.0.1 () {36 vars in 623 bytes} [Fri Jul 14 09:13:35 2017] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 26370)
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.

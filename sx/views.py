@@ -29,3 +29,6 @@ def register_handle(request):
     return  redirect('/user/login/')
 def login(requst):
     return render(requst,'user_info/login.html')
+
+def index(request):
+    return render(request,'magicIndex/index.html')
